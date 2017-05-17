@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690AC8071ECB7FBF00F4D628 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690AC8061ECB7FBF00F4D628 /* Cocoa.framework */; };
 		B3008AF01ECB387200F6385F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3008AEF1ECB387200F6385F /* AppDelegate.m */; };
 		B3008AF31ECB387200F6385F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3008AF21ECB387200F6385F /* main.m */; };
 		B3008AF61ECB387200F6385F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3008AF51ECB387200F6385F /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690AC8061ECB7FBF00F4D628 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		690AC8081ECB7FCD00F4D628 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		B3008AEB1ECB387200F6385F /* focus_stack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = focus_stack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3008AEE1ECB387200F6385F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3008AEF1ECB387200F6385F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690AC8071ECB7FBF00F4D628 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,8 @@
 		B3008AE21ECB387200F6385F = {
 			isa = PBXGroup;
 			children = (
+				690AC8081ECB7FCD00F4D628 /* Quartz.framework */,
+				690AC8061ECB7FBF00F4D628 /* Cocoa.framework */,
 				B3008AED1ECB387200F6385F /* focus_stack */,
 				B3008B041ECB387200F6385F /* focus_stackTests */,
 				B3008B0F1ECB387200F6385F /* focus_stackUITests */,
@@ -418,6 +424,7 @@
 				DEVELOPMENT_TEAM = 995ALN287J;
 				INFOPLIST_FILE = focus_stack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.org.banstead.focus-stack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -431,6 +438,7 @@
 				DEVELOPMENT_TEAM = 995ALN287J;
 				INFOPLIST_FILE = focus_stack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.org.banstead.focus-stack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -509,6 +517,7 @@
 				B3008B171ECB387200F6385F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3008B181ECB387200F6385F /* Build configuration list for PBXNativeTarget "focus_stackTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				B3008B1A1ECB387200F6385F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3008B1B1ECB387200F6385F /* Build configuration list for PBXNativeTarget "focus_stackUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +535,7 @@
 				B3008B1D1ECB387200F6385F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

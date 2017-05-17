@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize stepSizeIn, nStepIn, distanceIn, Status_output;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +25,17 @@
 }
 
 
+- (IBAction)startButton:(id)sender {
+    
+    NSString * stepSize=stepSizeIn.stringValue;
+    NSString * distance=distanceIn.stringValue;
+    NSString * numSteps=nStepIn.stringValue;
+    
+    Status_output.stringValue = stepSize;
+    
+    
+
+    
+    
+}
 @end
